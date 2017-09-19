@@ -53,6 +53,6 @@ namespace C1K.VendorPortal.BackgroundService.BackgroundWorker
         {
             RecurringJob.AddOrUpdate<TJob>(job => job.Execute(args), cronExpressions);
             return Task.FromResult(0);
-        }        
+        }
     }
 }

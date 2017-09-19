@@ -70,10 +70,12 @@ namespace C1K.VendorPortal.BackgroundService
         }
         public override void PostInitialize()
         {
-            IocManager.RegisterIfNot<IHangfireRecurringJobManager, HangfireRecurringJobManager>();
+            //IocManager.RegisterIfNot<IHangfireRecurringJobManager, HangfireRecurringJobManager>();
 
-            var manager = IocManager.Resolve<IBackgroundWorkerManager>();            
-            manager.Add(IocManager.Resolve<HangfireRecurringJobManager>());
+            //var manager = IocManager.Resolve<IBackgroundWorkerManager>();            
+            //manager.Add(IocManager.Resolve<HangfireRecurringJobManager>());
+            BackgroundJob.Schedule(() => System.Diagnostics.Trace.WriteLine("This background job would execute after a delay."), TimeSpan.FromMilliseconds(1000));
+            RecurringJob.AddOrUpdate(() => System.Diagnostics.Trace.WriteLine("This job will execute us."), Cron.Minutely);            
         }
     }
 }
