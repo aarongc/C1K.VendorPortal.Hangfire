@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage.ModelDescriptions
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

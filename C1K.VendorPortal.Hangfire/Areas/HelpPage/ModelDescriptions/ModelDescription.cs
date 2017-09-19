@@ -1,6 +1,6 @@
 using System;
 
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage.ModelDescriptions
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.

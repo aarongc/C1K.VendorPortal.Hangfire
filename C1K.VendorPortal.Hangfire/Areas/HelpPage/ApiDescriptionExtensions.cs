@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

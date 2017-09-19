@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using C1K.VendorPortal.Hangfire.Areas.HelpPage.ModelDescriptions;
-using C1K.VendorPortal.Hangfire.Areas.HelpPage.Models;
+using C1K.VendorPortal.BackgroundServices.Areas.HelpPage.ModelDescriptions;
+using C1K.VendorPortal.BackgroundServices.Areas.HelpPage.Models;
 
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage.Controllers
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

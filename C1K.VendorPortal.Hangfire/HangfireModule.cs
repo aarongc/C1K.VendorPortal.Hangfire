@@ -1,13 +1,19 @@
-﻿using Abp.Hangfire;
+﻿using Abp.Dependency;
+using Abp.Hangfire;
 using Abp.Hangfire.Configuration;
 using Abp.Modules;
 using Abp.Web.Mvc;
+using Abp.Zero.Configuration;
+using C1K.VendorPortal.BackgroundServices.BackgroundWorker;
 using Hangfire;
 using System;
 using System.Reflection;
 using System.Web;
+using System.Web.Mvc;
+using System.Web.Optimization;
+using System.Web.Routing;
 
-namespace C1K.VendorPortal.Hangfire
+namespace C1K.VendorPortal.BackgroundServices
 {
     [DependsOn(typeof(AbpHangfireModule),
         typeof(AbpWebMvcModule))]
@@ -40,6 +46,12 @@ namespace C1K.VendorPortal.Hangfire
         }
         public override void PreInitialize()
         {
+            //Enable database based localization
+            //Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();
+
+            //Configure navigation/menu
+            //Configuration.Navigation.Providers.Add<HangfireNavigationProvider>();
+
             Configuration.BackgroundJobs.UseHangfire(configuration =>
             {
                 configuration.GlobalConfiguration.UseSqlServerStorage("Default");
@@ -48,7 +60,16 @@ namespace C1K.VendorPortal.Hangfire
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());            
+            IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
+
+            AreaRegistration.RegisterAllAreas();            
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+        public override void PostInitialize()
+        {
+            //IocManager.RegisterIfNot<IRecurringJobManager, HangfireRecurringJobManager>();
         }
     }
 }

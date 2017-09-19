@@ -1,4 +1,4 @@
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

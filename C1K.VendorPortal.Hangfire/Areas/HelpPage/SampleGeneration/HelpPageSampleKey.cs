@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Net.Http.Headers;
 
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage
 {
     /// <summary>
     /// This is used to identify the place where the sample should be applied.

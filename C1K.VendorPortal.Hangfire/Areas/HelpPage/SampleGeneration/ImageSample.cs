@@ -1,6 +1,6 @@
 using System;
 
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage
 {
     /// <summary>
     /// This represents an image sample on the help page. There's a display template named ImageSample associated with this class.

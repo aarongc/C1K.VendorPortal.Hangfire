@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage.ModelDescriptions
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

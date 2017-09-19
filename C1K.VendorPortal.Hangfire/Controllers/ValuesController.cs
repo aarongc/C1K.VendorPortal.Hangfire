@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace C1K.VendorPortal.Hangfire.Controllers
+namespace C1K.VendorPortal.BackgroundServices.Controllers
 {
     public class ValuesController : ApiController
     {

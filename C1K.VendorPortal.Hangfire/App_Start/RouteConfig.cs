@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace C1K.VendorPortal.Hangfire
+namespace C1K.VendorPortal.BackgroundServices
 {
     public class RouteConfig
     {

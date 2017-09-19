@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace C1K.VendorPortal.Hangfire
+namespace C1K.VendorPortal.BackgroundServices
 {
     public class BundleConfig
     {

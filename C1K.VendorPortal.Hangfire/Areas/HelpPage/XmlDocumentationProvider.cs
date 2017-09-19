@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using C1K.VendorPortal.Hangfire.Areas.HelpPage.ModelDescriptions;
+using C1K.VendorPortal.BackgroundServices.Areas.HelpPage.ModelDescriptions;
 
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

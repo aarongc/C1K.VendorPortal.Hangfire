@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="C1K.VendorPortal.Hangfire.WebApiApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="C1K.VendorPortal.BackgroundServices.WebApiApplication" Language="C#" %>

@@ -1,4 +1,4 @@
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage.ModelDescriptions
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage.ModelDescriptions
 {
     public class KeyValuePairModelDescription : ModelDescription
     {

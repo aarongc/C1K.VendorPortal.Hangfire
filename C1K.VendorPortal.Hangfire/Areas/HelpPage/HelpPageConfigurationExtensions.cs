@@ -11,10 +11,10 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using C1K.VendorPortal.Hangfire.Areas.HelpPage.ModelDescriptions;
-using C1K.VendorPortal.Hangfire.Areas.HelpPage.Models;
+using C1K.VendorPortal.BackgroundServices.Areas.HelpPage.ModelDescriptions;
+using C1K.VendorPortal.BackgroundServices.Areas.HelpPage.Models;
 
-namespace C1K.VendorPortal.Hangfire.Areas.HelpPage
+namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {
