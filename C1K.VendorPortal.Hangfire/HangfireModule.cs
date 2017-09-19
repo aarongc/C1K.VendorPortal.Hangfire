@@ -6,6 +6,7 @@ using Abp.Threading.BackgroundWorkers;
 using Abp.Web.Mvc;
 using Abp.Zero.Configuration;
 using C1K.VendorPortal.BackgroundService.BackgroundWorker;
+using C1K.VendorPortal.BackgroundServices.ServiceReference;
 using Hangfire;
 using System;
 using System.Reflection;
@@ -74,8 +75,21 @@ namespace C1K.VendorPortal.BackgroundService
 
             //var manager = IocManager.Resolve<IBackgroundWorkerManager>();            
             //manager.Add(IocManager.Resolve<HangfireRecurringJobManager>());
-            BackgroundJob.Schedule(() => System.Diagnostics.Trace.WriteLine("This background job would execute after a delay."), TimeSpan.FromMilliseconds(1000));
-            RecurringJob.AddOrUpdate(() => System.Diagnostics.Trace.WriteLine("This job will execute us."), Cron.Minutely);            
+            //BackgroundJob.Schedule(() => System.Diagnostics.Trace.WriteLine("This background job would execute after a delay."), TimeSpan.FromMilliseconds(1000));
+            //RecurringJob.AddOrUpdate(() => System.Diagnostics.Trace.WriteLine("This job will execute us."), Cron.Minutely);            
+            BackgroundJob.Enqueue(() => GetSampleOrderRequest());
+        }
+
+        public static string GetSampleOrderRequest()
+        {
+            string sample = null;
+
+            using (ServiceClient client = new ServiceClient())
+            {
+                sample = client.GetSampleOrderRequest();
+            }
+
+            return sample;
         }
     }
 }

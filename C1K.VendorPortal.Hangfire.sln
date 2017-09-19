@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1K.VendorPortal.BackgroundService", "C1K.VendorPortal.Hangfire\C1K.VendorPortal.BackgroundService.csproj", "{4BFCE4A2-39AF-43EE-BCAE-ED333323C709}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FE91051F-DE4C-484C-8563-E07200D5258C} = {FE91051F-DE4C-484C-8563-E07200D5258C}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1K.VendorPortal.WcfService", "C1K.VendorPortal.WcfService\C1K.VendorPortal.WcfService.csproj", "{FE91051F-DE4C-484C-8563-E07200D5258C}"
 EndProject
