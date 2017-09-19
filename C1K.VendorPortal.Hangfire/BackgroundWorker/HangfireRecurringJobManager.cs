@@ -8,7 +8,7 @@ using System.Web;
 using System.Threading.Tasks;
 using Hangfire;
 
-namespace C1K.VendorPortal.BackgroundServices.BackgroundWorker
+namespace C1K.VendorPortal.BackgroundService.BackgroundWorker
 {
     public class HangfireRecurringJobManager : BackgroundWorkerBase, IRecurringJobManager
     {

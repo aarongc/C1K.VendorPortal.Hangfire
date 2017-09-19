@@ -4,7 +4,7 @@ using Abp.Hangfire.Configuration;
 using Abp.Modules;
 using Abp.Web.Mvc;
 using Abp.Zero.Configuration;
-using C1K.VendorPortal.BackgroundServices.BackgroundWorker;
+using C1K.VendorPortal.BackgroundService.BackgroundWorker;
 using Hangfire;
 using System;
 using System.Reflection;
@@ -13,7 +13,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace C1K.VendorPortal.BackgroundServices
+namespace C1K.VendorPortal.BackgroundService
 {
     [DependsOn(typeof(AbpHangfireModule),
         typeof(AbpWebMvcModule))]

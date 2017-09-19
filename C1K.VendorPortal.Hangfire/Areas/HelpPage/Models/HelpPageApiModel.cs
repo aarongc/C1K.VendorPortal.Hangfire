@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using C1K.VendorPortal.BackgroundServices.Areas.HelpPage.ModelDescriptions;
+using C1K.VendorPortal.BackgroundService.Areas.HelpPage.ModelDescriptions;
 
-namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage.Models
+namespace C1K.VendorPortal.BackgroundService.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

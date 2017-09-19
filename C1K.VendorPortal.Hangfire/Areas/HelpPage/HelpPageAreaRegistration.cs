@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage
+namespace C1K.VendorPortal.BackgroundService.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

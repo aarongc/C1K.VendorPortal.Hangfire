@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace C1K.VendorPortal.BackgroundServices
+namespace C1K.VendorPortal.BackgroundService
 {
     public static class WebApiConfig
     {

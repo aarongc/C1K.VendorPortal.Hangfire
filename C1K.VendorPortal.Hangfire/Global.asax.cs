@@ -8,7 +8,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace C1K.VendorPortal.BackgroundServices
+namespace C1K.VendorPortal.BackgroundService
 {
     public class WebApiApplication : AbpWebApplication<HangfireModule> //System.Web.HttpApplication
     {

@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace C1K.VendorPortal.BackgroundServices
+namespace C1K.VendorPortal.BackgroundService
 {
     public class FilterConfig
     {

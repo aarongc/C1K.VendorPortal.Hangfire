@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace C1K.VendorPortal.BackgroundServices.Controllers
+namespace C1K.VendorPortal.BackgroundService.Controllers
 {
     public class ValuesController : ApiController
     {

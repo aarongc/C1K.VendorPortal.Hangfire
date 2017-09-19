@@ -6,9 +6,9 @@ using Hangfire;
 using Abp.Hangfire;
 using Abp.Owin;
 
-[assembly: OwinStartup(typeof(C1K.VendorPortal.BackgroundServices.Startup))]
+[assembly: OwinStartup(typeof(C1K.VendorPortal.BackgroundService.Startup))]
 
-namespace C1K.VendorPortal.BackgroundServices
+namespace C1K.VendorPortal.BackgroundService
 {
     public class Startup
     {

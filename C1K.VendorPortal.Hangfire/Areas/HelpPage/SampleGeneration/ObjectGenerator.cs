@@ -6,7 +6,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace C1K.VendorPortal.BackgroundServices.Areas.HelpPage
+namespace C1K.VendorPortal.BackgroundService.Areas.HelpPage
 {
     /// <summary>
     /// This class will create an object of a given type and populate it with sample data.

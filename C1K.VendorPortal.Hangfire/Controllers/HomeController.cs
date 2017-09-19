@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace C1K.VendorPortal.BackgroundServices.Controllers
+namespace C1K.VendorPortal.BackgroundService.Controllers
 {
     public class HomeController : Controller
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace C1K.VendorPortal.BackgroundServices.BackgroundWorker
+namespace C1K.VendorPortal.BackgroundService.BackgroundWorker
 {
     public interface IRecurringJobManager : IBackgroundWorker
     {
