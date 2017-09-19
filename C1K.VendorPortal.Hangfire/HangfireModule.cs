@@ -2,6 +2,7 @@
 using Abp.Hangfire;
 using Abp.Hangfire.Configuration;
 using Abp.Modules;
+using Abp.Threading.BackgroundWorkers;
 using Abp.Web.Mvc;
 using Abp.Zero.Configuration;
 using C1K.VendorPortal.BackgroundService.BackgroundWorker;
@@ -69,7 +70,10 @@ namespace C1K.VendorPortal.BackgroundService
         }
         public override void PostInitialize()
         {
-            //IocManager.RegisterIfNot<IRecurringJobManager, HangfireRecurringJobManager>();
+            IocManager.RegisterIfNot<IHangfireRecurringJobManager, HangfireRecurringJobManager>();
+
+            var manager = IocManager.Resolve<IBackgroundWorkerManager>();            
+            manager.Add(IocManager.Resolve<HangfireRecurringJobManager>());
         }
     }
 }

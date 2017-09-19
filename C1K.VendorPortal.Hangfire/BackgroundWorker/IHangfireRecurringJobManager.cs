@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace C1K.VendorPortal.BackgroundService.BackgroundWorker
 {
-    public interface IRecurringJobManager : IBackgroundWorker
+    public interface IHangfireRecurringJobManager : IBackgroundWorker
     {
         Task AddOrUpdateAsync<TJob, TArgs>(TArgs args, string cronExpressions, BackgroundJobPriority priority = BackgroundJobPriority.Normal)
            where TJob : IBackgroundJob<TArgs>; 

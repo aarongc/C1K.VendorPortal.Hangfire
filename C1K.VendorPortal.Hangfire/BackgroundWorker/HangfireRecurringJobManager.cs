@@ -10,7 +10,7 @@ using Hangfire;
 
 namespace C1K.VendorPortal.BackgroundService.BackgroundWorker
 {
-    public class HangfireRecurringJobManager : BackgroundWorkerBase, IRecurringJobManager
+    public class HangfireRecurringJobManager : BackgroundWorkerBase, IHangfireRecurringJobManager
     {
         private readonly IBackgroundJobConfiguration backgroundJobConfiguration;
         private readonly IAbpHangfireConfiguration hangfireConfiguration;

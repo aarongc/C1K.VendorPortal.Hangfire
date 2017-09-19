@@ -16,14 +16,14 @@ namespace C1K.VendorPortal.BackgroundService
         {
             // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=316888            
             app.UseAbp();
-            app.UseHangfireDashboard("/hangfire", new DashboardOptions
-            {
-                Authorization = new[] { new AbpHangfireAuthorizationFilter() }
-            });
 
-            //GlobalConfiguration.Configuration.UseSqlServerStorage("Default");
-            //app.UseHangfireDashboard();
-            //app.UseHangfireServer();
+            //app.UseHangfireDashboard("/hangfire", new DashboardOptions
+            //{
+            //    Authorization = new[] { new AbpHangfireAuthorizationFilter() }
+            //});
+            
+            app.UseHangfireDashboard();
+            app.UseHangfireServer();
         }
     }
 }
