@@ -27,7 +27,7 @@ timestamp="2000-08-03T08:49:11+07:00">
       orderDate="2012-08-03T08:49:09+07:00" type="new">
         <Total>
           <Money currency="USD">86.50</Money>
-        </Total>
+        </Total>p
         <ShipTo>
           <Address isoCountryCode="US" addressID="1000467">
             <Name xml:lang="en">Acme, Inc.</Name>
