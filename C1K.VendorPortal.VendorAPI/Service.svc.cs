@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using System.Web;
+using System.Web.Hosting;
 using System.Xml;
 
 namespace C1K.VendorPortal.WcfService
@@ -39,6 +42,19 @@ namespace C1K.VendorPortal.WcfService
                 @"cXMLFile\OrderRequest.xml"));
 
             return xml.OuterXml;
+        }
+        
+        public void ProcessPO(string cXML)
+        {
+            //malformed xml file
+            //using (StreamWriter orderRequest = new StreamWriter(HostingEnvironment.MapPath("~/cXMLFile/po1.xml"), true))
+            //{
+            //    orderRequest.WriteLine(cXML);
+            //}
+
+            XmlDocument orderRequest = new XmlDocument();
+            orderRequest.LoadXml(cXML);
+            orderRequest.Save(HostingEnvironment.MapPath("~/cXMLFile/po1.xml"));
         }
     }
 }

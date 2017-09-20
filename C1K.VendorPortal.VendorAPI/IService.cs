@@ -22,6 +22,9 @@ namespace C1K.VendorPortal.WcfService
         // TODO: Add your service operations here
         [OperationContract]
         string GetSampleOrderRequest();
+
+        [OperationContract]
+        void ProcessPO(string cXML);
     }
 
 

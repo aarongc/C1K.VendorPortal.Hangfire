@@ -10,6 +10,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1K.VendorPortal.Background
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1K.VendorPortal.VendorAPI", "C1K.VendorPortal.VendorAPI\C1K.VendorPortal.VendorAPI.csproj", "{FE91051F-DE4C-484C-8563-E07200D5258C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1K.VendorPortal.Application.API", "C1K.VendorPortal.Application.API\C1K.VendorPortal.Application.API.csproj", "{0F392DAD-2A68-4B7B-B2E2-22841D884292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.POSend", "Test.POSend\Test.POSend.csproj", "{853CECB6-A36B-4B9F-BCF8-A4784E48425F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FE91051F-DE4C-484C-8563-E07200D5258C} = {FE91051F-DE4C-484C-8563-E07200D5258C}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +31,14 @@ Global
 		{FE91051F-DE4C-484C-8563-E07200D5258C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE91051F-DE4C-484C-8563-E07200D5258C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE91051F-DE4C-484C-8563-E07200D5258C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F392DAD-2A68-4B7B-B2E2-22841D884292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F392DAD-2A68-4B7B-B2E2-22841D884292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F392DAD-2A68-4B7B-B2E2-22841D884292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F392DAD-2A68-4B7B-B2E2-22841D884292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853CECB6-A36B-4B9F-BCF8-A4784E48425F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853CECB6-A36B-4B9F-BCF8-A4784E48425F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853CECB6-A36B-4B9F-BCF8-A4784E48425F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853CECB6-A36B-4B9F-BCF8-A4784E48425F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
