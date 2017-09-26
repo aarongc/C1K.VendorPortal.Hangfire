@@ -25,6 +25,12 @@
   <wsdl:message name="IService_GetSampleOrderRequest_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetSampleOrderRequestResponse" />
   </wsdl:message>
+  <wsdl:message name="IService_ProcessPO_InputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessPO" />
+  </wsdl:message>
+  <wsdl:message name="IService_ProcessPO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ProcessPOResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/GetData" message="tns:IService_GetData_InputMessage" />
@@ -37,6 +43,10 @@
     <wsdl:operation name="GetSampleOrderRequest">
       <wsdl:input wsaw:Action="http://tempuri.org/IService/GetSampleOrderRequest" message="tns:IService_GetSampleOrderRequest_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/GetSampleOrderRequestResponse" message="tns:IService_GetSampleOrderRequest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessPO">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ProcessPO" message="tns:IService_ProcessPO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ProcessPOResponse" message="tns:IService_ProcessPO_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
@@ -61,6 +71,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetSampleOrderRequest">
       <soap:operation soapAction="http://tempuri.org/IService/GetSampleOrderRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessPO">
+      <soap:operation soapAction="http://tempuri.org/IService/ProcessPO" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

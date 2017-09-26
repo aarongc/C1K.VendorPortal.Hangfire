@@ -54,7 +54,7 @@ namespace C1K.VendorPortal.WcfService
 
             XmlDocument orderRequest = new XmlDocument();
             orderRequest.LoadXml(cXML);
-            orderRequest.Save(HostingEnvironment.MapPath("~/cXMLFile/po1.xml"));
+            orderRequest.Save(HostingEnvironment.MapPath("~/cXMLFile/OrderRequest.xml"));
         }
     }
 }

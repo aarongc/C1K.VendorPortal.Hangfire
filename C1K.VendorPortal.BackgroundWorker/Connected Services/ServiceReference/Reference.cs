@@ -95,6 +95,12 @@ namespace C1K.VendorPortal.BackgroundWorker.ServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/GetSampleOrderRequest", ReplyAction="http://tempuri.org/IService/GetSampleOrderRequestResponse")]
         System.Threading.Tasks.Task<string> GetSampleOrderRequestAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ProcessPO", ReplyAction="http://tempuri.org/IService/ProcessPOResponse")]
+        void ProcessPO(string cXML);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ProcessPO", ReplyAction="http://tempuri.org/IService/ProcessPOResponse")]
+        System.Threading.Tasks.Task ProcessPOAsync(string cXML);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -146,6 +152,14 @@ namespace C1K.VendorPortal.BackgroundWorker.ServiceReference {
         
         public System.Threading.Tasks.Task<string> GetSampleOrderRequestAsync() {
             return base.Channel.GetSampleOrderRequestAsync();
+        }
+        
+        public void ProcessPO(string cXML) {
+            base.Channel.ProcessPO(cXML);
+        }
+        
+        public System.Threading.Tasks.Task ProcessPOAsync(string cXML) {
+            return base.Channel.ProcessPOAsync(cXML);
         }
     }
 }
